@@ -63,7 +63,7 @@ export default {
                 // console.log(valid);
                 if (!valid) return;
                 const { data: res } = await this.$http.post('login', this.loginForm);
-                console.log(res);
+                // console.log(res);
                 if (res.meta.status !== 200) return this.$message.error('登陆失败');
                 this.$message.success('登陆成功');
                 // 1.将登陆之后的token 保存在客户端的sessionStorage中
