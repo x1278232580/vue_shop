@@ -24,6 +24,10 @@ axios.interceptors.request.use(config => {
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
 
+// 引入树形表格
+import TreeTable from 'vue-table-with-tree-grid'
+Vue.component('tree-table', TreeTable)
+
 new Vue({
   router,
   render: function (h) { return h(App) }
