@@ -156,6 +156,7 @@ export default {
                 // 当前每页显示多少条数据
                 pagesize: 3
             },
+            // 用户列表数据
             userList: [],
             total: 0,
             // 控制添加用户对话框的显示与隐藏
